@@ -100,7 +100,7 @@ nav ul li a{
 /* ******************************* */
 .hero{
     width: 100%;
-    height:800px;
+   
 
    
 
@@ -108,9 +108,14 @@ nav ul li a{
     position: relative;
     z-index: 0;
     overflow: hidden;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
    
 
-}
+
 .gradiant{
     width: 100%;
     height: 800px;
@@ -126,7 +131,7 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 800px;
+    height: 100vh;
    
    
 
@@ -137,20 +142,22 @@ nav ul li a{
 }
 
 .group-bag{
-    width: 50%;
+    width: 64%;
    
 }
 .hero-center{
     position: absolute;
-  transform: translate(2%,-5%);
+  transform: translate(1%,17%);
   color:var(--font-primary__white);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap:32px;
 }
 .hero-center span{
     text-align: center;
+    width: 47%;
 }
 .btnShop{
     border: 1px solid white;
@@ -162,7 +169,7 @@ nav ul li a{
 .hero-bottom{
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: 80%;
 
     display: flex;
     align-items: center;
@@ -187,10 +194,42 @@ nav ul li a{
 }
 
 @media (max-width:900px){
+    .hero-center {
+        transform: translate(1%,25%);
+      }
 
 }
 @media (max-width:700px){
 
+
+    nav{
+        display: none;
+    }
+    .icon-bag{
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+    }
+
+    .hero-bottom{
+        justify-content: center;
+    }
+    .hero-bottom span:first-child{
+        display: none;
+       
+    }
+
+    .hero-center span{
+        width: 100%;
+    }
+    .group-bag {
+        width: 73%;
+      }
+
+      .hero-center {
+        transform: translate(1%,21%);
+      }
 }
 
 
@@ -206,5 +245,23 @@ nav ul li a{
         display: block;
     }
 
+    .hero-bottom{
+        justify-content: center;
+    }
+    .hero-bottom span:first-child{
+        display: none;
+       
+    }
+
+    .hero-center span{
+        width: 100%;
+    }
+    .group-bag {
+        width: 73%;
+      }
+
+      .hero-center {
+        transform: translate(1%,148%);
+      }
 }
 
